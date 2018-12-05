@@ -58,6 +58,7 @@ class App extends Component {
         <Modal
           isOpen={this.props.isModalOpen}
           contentLabel="Example Modal"
+          onRequestClose={this.props.toggleModal}
           style={{
             overlay: {
               backgroundColor: 'rgba(108, 122, 137, 1)',
@@ -77,7 +78,7 @@ class App extends Component {
           }}
         >
           <RadioGroup
-            name="fruit"
+            name="synonyms"
             selectedValue={null}
             onChange={selected => {
               this.props.toggleModal();
