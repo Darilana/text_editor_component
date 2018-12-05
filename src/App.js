@@ -58,6 +58,23 @@ class App extends Component {
         <Modal
           isOpen={this.props.isModalOpen}
           contentLabel="Example Modal"
+          style={{
+            overlay: {
+              backgroundColor: 'rgba(108, 122, 137, 1)',
+              opacity: '0.8'
+            },
+            content: {
+              color: 'black',
+              width: '300px',
+              height: '300px',
+              top: '50%',
+              left: '50%',
+              right: 'auto',
+              bottom: 'auto',
+              marginRight: '-50%',
+              transform: 'translate(-50%, -50%)'
+            }
+          }}
         >
           <RadioGroup
             name="fruit"
